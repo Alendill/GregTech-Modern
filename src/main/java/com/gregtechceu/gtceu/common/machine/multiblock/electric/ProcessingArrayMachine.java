@@ -10,6 +10,7 @@ import com.gregtechceu.gtceu.api.machine.MachineDefinition;
 import com.gregtechceu.gtceu.api.machine.MetaMachine;
 import com.gregtechceu.gtceu.api.machine.MultiblockMachineDefinition;
 import com.gregtechceu.gtceu.api.machine.feature.IMachineModifyDrops;
+import com.gregtechceu.gtceu.api.machine.multiblock.MultiblockDisplayText;
 import com.gregtechceu.gtceu.api.machine.multiblock.TieredWorkableElectricMultiblockMachine;
 import com.gregtechceu.gtceu.api.machine.trait.NotifiableItemStackHandler;
 import com.gregtechceu.gtceu.api.recipe.GTRecipe;
@@ -188,11 +189,6 @@ public class ProcessingArrayMachine extends TieredWorkableElectricMultiblockMach
     @Override
     public int getMaxOverclockTier() {
         return getOverclockTier();
-    }
-
-    @Override
-    public long getMaxVoltage() {
-        return getMaxHatchVoltage();
     }
 
     @Nullable
